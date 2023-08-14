@@ -1,0 +1,419 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    
+    {
+      "tag":"Definition",
+      "patterns": [
+        "Python",
+        "What is python?",
+        "What is meant by python?",
+        "Is python a programming language?"
+      ],
+      "responses": [
+        "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation via the off-side rule. Python is dynamically typed and garbage-collected.",
+        "Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a 'batteries included' language due to its comprehensive standard library"
+      ]
+    },
+    {
+      "tag":"History",
+      "patterns": [
+        "History",
+        "Who designed python?",
+        "Who developed python?",
+        "In which year python is designed?",
+        "Where did the name python came from?"
+      ],
+      "responses": [
+        "Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991.While you may know the python as a large snake, the name of the Python programming language comes from an old BBC television comedy sketch series called Monty Python's Flying Circus."
+      ]
+    },
+    {
+      "tag":"Syntax",
+        "patterns": [
+          "Syntax",
+          "What is the syntax of python program?",
+          "The basic syntax of python?"
+        ],
+        "responses": [
+          "print('Hello, World!') \n output:Hello, World!"
+        ]
+    },
+    {
+      "tag":"Comments",
+      "patterns":[
+        "Comments",
+        "What are comments?",
+        "How to write comments?"
+      ],
+      "responses":[
+        "Comments can be used to explain Python code.\n Comments can be used to make the code more readable.\nComments can be used to prevent execution when testing code.\n Comments starts with a #, and Python will ignore them \n#This is a comment"
+      ]
+
+    },
+    {
+      "tag":"Variables",
+      "patterns":[
+        "Variables",
+        "What are variables?",
+        "How to declare variables?"
+      ],
+      "responses":[
+        "Variables are containers for storing data values.\nPython has no command for declaring a variable.\n A variable is created the moment you first assign a value to it."
+      ]
+    },
+    {
+      "tag":"Datatypes",
+      "patterns": [
+        "Datatype",
+        "What are datatypes?",
+        "Datatypes in python?"
+      ],
+      "responses": [
+        "Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data.\n Numeric\n Sequence Types /n Boolean\nSet\nDictionary\nBinary Types "
+        
+      ]
+      
+    },
+    {
+      "tag":"Numeric datatype",
+      "patterns":[
+        "Numeric",
+        "What are numeric datatypes?",
+        "Numeric datatypes in python?"
+      ],
+      "responses":[
+        "The numeric data type in Python represents the data that has a numeric value. A numeric value can be an integer, a floating number, or even a complex number.\n1.Integers – This value is represented by int class. It contains positive or negative whole numbers\n2.Float – This value is represented by the float class. It is a real number with a floating-point representation. It is specified by a decimal point\n3.Complex Numbers – Complex number is represented by a complex class. It is specified as (real part) + (imaginary part)j"
+      ]
+    },
+    {
+      "tag":"Sequence Types",
+      "patterns":[
+        "Sequence",
+        "What are sequence types?",
+        "Sequence types in python?"
+      ],
+      "responses":[
+        "The sequence Data Type in Python is the ordered collection of similar or different data types. Sequences allow storing of multiple values in an organized and efficient fashion. \n1.Strings in Python are arrays of bytes representing Unicode characters. A string is a collection of one or more characters put in a single quote, double-quote, or triple-quote.\n2.Lists are just like arrays, declared in other languages which is an ordered collection of data. It is very flexible as the items in a list do not need to be of the same type. \n3.Just like a list, a tuple is also an ordered collection of Python objects. The only difference between a tuple and a list is that tuples are immutable"
+      ]
+    },
+    {
+      "tag":"Boolean",
+      "patterns":[
+        "Boolean",
+        "What are boolean datatypes?",
+        "Boolean datatypes in python"
+      ],
+      "responses":[
+        "Data type with one of the two built-in values, True or False. Boolean objects that are equal to True are truthy (true), and those equal to False are falsy (false).\nTrue and False with capital ‘T’ and ‘F’ are valid booleans otherwise python will throw an error. "
+      ]
+    },
+    {
+      "tag":"Set",
+      "patterns":[
+        "Set",
+        "What is a set?",
+        "Sets in python"
+      ],
+      "responses":[
+        "A Set is an unordered collection of data types that is iterable, mutable and has no duplicate elements. The order of elements in a set is undefined though it may consist of various elements.\nSets can be created by using the built-in set() function with an iterable object or a sequence by placing the sequence inside curly braces, separated by a ‘comma’."
+      ]
+    },
+    {
+      "tag":"Dictionary",
+      "patterns":[
+        "Dictionary",
+        "What is a dictionary?",
+        "Dictionary in python?",
+        "How to add elements into a dictionary?",
+        "How to access elemens in a dictionary?",
+        "How to delete an element in a dictionary?"
+
+      ],
+      "responses":[
+        "1.A dictionary in Python is an unordered collection of data values, used to store data values like a map, unlike other Data Types that hold only a single value as an element, a Dictionary holds a key: value pair. \n2. Key-value is provided in the dictionary to make it more optimized. Each key-value pair in a Dictionary is separated by a colon : , whereas each key is separated by a ‘comma’.\n 3.Addition of elements can be done in multiple ways. One value at a time can be added to a Dictionary by defining value along with the key e.g. Dict[Key] = ‘Value’. Updating an existing value in a Dictionary can be done by using the built-in update() method.\n4. In order to access the items of a dictionary refer to its key name. Key can be used inside square brackets.\n 5.The items of the dictionary can be deleted by using the del keyword."
+      ]
+    },
+    {
+      "tag":"Decision making statements",
+      "patterns":[
+        "Decision making statements?",
+        "What are decision making statements?"
+      ],
+      "responses":[
+        "Decision-making statements in programming languages decide the direction(Control Flow) of the flow of program execution.\n In Python programming language, the type of control flow statements is as follows:\nThe if statement\nThe if-else statement\nThe nested-if statement"
+        
+      ]
+    },
+    {
+      "tag":"if statement",
+      "patterns":[
+        "if statement",
+        "What is if statement in python?",
+        "What is if statement?"
+      ],
+      "responses":[
+        "The if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not.\n Here, the condition after evaluation will be either true or false. if the statement accepts boolean values – if the value is true then it will execute the block of statements below it otherwise not.\n if condition:\tstatement1\n\nstatement2"
+      ]
+    },
+    {
+      "tag":"if-else statement",
+      "patterns":[
+        "if-else statements",
+        "What is if-else statement?",
+        "What is if-else statement in python?"
+      ],
+      "responses":[
+        "The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won’t. But if we want to do something else if the condition is false, we can use the else statement with if statement to execute a block of code when the if condition is false. "
+      ]
+    },
+    {
+      "tag":"Nested if statement",
+      "patterns":[
+        "nested if statement",
+        "What is nested if statement?",
+        "What is nested if statement in python?"
+      ],
+      "responses":[
+        "A nested if is an if statement that is the target of another if statement. Nested if statements mean an if statement inside another if statement. Yes, Python allows us to nest if statements within if statements. i.e., we can place an if statement inside another if statement."
+      ]
+    },
+    {
+      "tag":"for loop",
+      "patterns":[
+        "for loop",
+        "What is for loop?",
+        "What is for loop in python?"
+      ],
+      "responses":[
+        "Python For loop is used for sequential traversal i.e. it is used for iterating over an iterable like String, Tuple, List, Set, or Dictionary. \n Here the iterable is a collection of objects like lists, and tuples. The indented statements inside the for loops are executed once for each item in an iterable. The variable var takes the value of the next item of the iterable each time through the loop."
+      ]
+    },
+    {
+      "tag":"While loop",
+      "patterns":[
+        "While loop",
+        "What is while loop?",
+        "What is while loop in python?"
+      ],
+      "responses":[
+        "Python While Loop is used to execute a block of statements repeatedly until a given condition is satisfied. And when the condition becomes false, the line immediately after the loop in the program is executed.\n While loop falls under the category of indefinite iteration. Indefinite iteration means that the number of times the loop is executed isn’t specified explicitly in advance. \n When a while loop is executed, expr is first evaluated in a Boolean context and if it is true, the loop body is executed. Then the expr is checked again, if it is still true then the body is executed again and this continues until the expression becomes false."
+      ]
+    },
+    {
+      "tag":"break statement",
+      "patterns":[
+        "break statement",
+        "What is break statement?",
+        "What is break statement in python?"
+      ],
+      "responses":[
+        "break statement in Python is used to bring the control out of the loop when some external condition is triggered. break statement is put inside the loop body (generally after if condition).  It terminates the current loop, i.e., the loop in which it appears, and resumes execution at the next statement immediately after the end of that loop. If the break statement is inside a nested loop, the break will terminate the innermost loop."
+      ]
+    },
+    {
+      "tag":"continue statement",
+      "patterns":[
+        "continue statement",
+        "What is continue statement?",
+        "What is continue statement in python?"
+      ],
+      "responses":[
+        "Python Continue statement is a loop control statement that forces to execute the next iteration of the loop while skipping the rest of the code inside the loop for the current iteration only, i.e. when the continue statement is executed in the loop, the code inside the loop following the continue statement will be skipped for the current iteration and the next iteration of the loop will begin"
+      ]
+    },
+    {
+      "tag":"pass statement",
+      "patterns":[
+        "pass statement",
+        "What is pass statement?",
+        "What is pass statement in python?"
+      ],
+      "responses":[
+        "The Python pass statement is a null statement. But the difference between pass and comment is that comment is ignored by the interpreter whereas pass is not ignored. \n When the user does not know what code to write, So user simply places a pass at that line. Sometimes, the pass is used when the user doesn’t want any code to execute. "
+      ]
+    },
+    {
+      "tag":"Functions",
+      "patterns":[
+        "functions",
+        "what is a function?",
+        "what is a function in python?"
+      ],
+      "responses":[
+        "Python Functions is a block of statements that return the specific task. The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again."
+      ]
+    },
+    {
+      "tag":"types of functions",
+      "patterns":[
+        "types of functions?",
+        "types of functions in python?"
+      ],
+      "responses":[
+        "There are mainly two types of functions in Python.\nBuilt-in library function: These are Standard functions in Python that are available to use.\n User-defined function: We can create our own functions based on our requirements."
+      ]
+    },
+    {
+      "tag":"Creating a function",
+      "patterns":[
+         "Creating a function?",
+         "How to create a function in python?",
+         "How to create a function?"
+      ],
+      "responses":[
+        "We can create a user-defined function in Python, using the def keyword. We can add any type of functionalities and properties to it as we require./ndef fun(): print(Welcome to Pybot)"
+      ]
+    },
+    {
+      "tag":"Calling a function",
+      "patterns":[
+        "Creating a function",
+        "How to create a function?",
+        "How to create a function in python?"
+      ],
+      "responses":[
+        "After creating a function in Python we can call it by using the name of the function followed by parenthesis containing parameters of that particular function\n def fun():\n print(Welcome to Pybot)\n # Driver code to call a function\n fun()"
+      ]
+    },
+    {
+      "tag":"Python Function Arguments",
+      "patterns":[
+        "Python Function Arguments",
+        "What are function arguments?",
+        "What are function arguments in python?"
+      ],
+      "responses":[
+        "Arguments are the values passed inside the parenthesis of the function. A function can have any number of arguments separated by a comma.\n In this example, we will create a simple function in Python to check whether the number passed as an argument to the function is even or odd."
+      ]
+    },
+    {
+      "tag":"Types of Python Function Arguments",
+      "patterns":[
+        "Types of Python Function Arguments",
+        "What are types of function arguments?",
+        "What are types of function arguments in python?"
+      ],
+      "responses":[
+        "Python supports various types of arguments that can be passed at the time of the function call. In Python, we have the following 4 types of function arguments.\n 1.Default argument \n 2.Keyword arguments (named arguments) \n 3.Positional arguments \n 4.Arbitrary arguments (variable-length arguments *args and **kwargs)"
+      ]
+    },
+    {
+      "tag":"Default Arguments",
+      "patterns":[
+        "Default Arguments",
+        "What are default arguments?",
+        "What are default arguments in python?"
+      ],
+      "responses":[
+        "A default argument is a parameter that assumes a default value if a value is not provided in the function call for that argument. The following example illustrates Default arguments. "
+      ]
+    },
+    {
+      "tag":"Keyword Arguments",
+      "patterns":[
+        "Keyword Arguments",
+        "What are keyword arguments?",
+        "What are keyword arguments in python?"
+      ],
+      "responses":[
+        "The idea is to allow the caller to specify the argument name with values so that the caller does not need to remember the order of parameters"
+      ]
+    },
+    {
+      "tag":"Positional Arguments",
+      "patterns":[
+        "Positional Arguments",
+        "What are positional arguments?",
+        "What are positional arguments in python?"
+      ],
+      "responses":[
+        "We used the Position argument during the function call so that the first argument (or value) is assigned to name and the second argument (or value) is assigned to age. By changing the position, or if you forget the order of the positions, the values can be used in the wrong places"
+      ]
+    },
+    {
+      "tag":"Arbitrary Keyword  Arguments",
+      "patterns":[
+        "Arbitrary Keyword  Arguments",
+        "What are arbitrary keyword arguments?",
+        "What are arbitrary keyword arguments in python? "
+      ],
+      "responses":[
+        "In Python Arbitrary Keyword Arguments, *args, and **kwargs can pass a variable number of arguments to a function using special symbols"
+      ]
+    },
+    {
+      "tag":"Return Statement in Python Function",
+      "patterns":[
+        "Return Statement in Python Function",
+        "What are Return Statement in function?",
+        "What are Return Statement in Python Function?"
+      ],
+      "responses":[
+        "The function return statement is used to exit from a function and go back to the function caller and return the specified value or data item to the caller. The syntax for the return statement is: \n return [expression_list] \n The return statement can consist of a variable, an expression, or a constant which is returned at the end of the function execution. If none of the above is present with the return statement a None object is returned."
+      ]
+    },
+    {
+      "tag":"String",
+      "patterns":[
+        "String",
+        "What is a string?",
+        "What are strings in python?",
+        "How to create a string in python?",
+        "How to access characters in python string?"
+      ],
+      "responses":[
+        "A string is a data structure in Python that represents a sequence of characters. It is an immutable data type, meaning that once you have created a string, you cannot change it. Strings are used widely in many different applications, such as storing and manipulating text data, representing names, addresses, and other types of data that can be represented as text.\n Strings in Python can be created using single quotes or double quotes or even triple quotes.\n In Python, individual characters of a String can be accessed by using the method of Indexing. Indexing allows negative address references to access characters from the back of the String, e.g. -1 refers to the last character, -2 refers to the second last character, and so on. "
+      ]
+    },
+    {
+      "tag":"Reverse string",
+      "patterns":[
+        "Reverse a string",
+        "How to reverse a string?",
+        "How to reverse a string in python?"
+      ],
+      "responses":[
+        "With Accessing Characters from a string, we can also reverse them. We can Reverse a string by writing [::-1] and the string will be reversed \n We can also reverse a string by using built-in join and reversed function."
+      ]
+    },
+    {
+      "tag":"String slicing",
+      "patterns":[
+        "String slicing",
+        "How do do string slicing?",
+        "How to do string slicing in python?"
+      ],
+      "responses":[
+        "To access a range of characters in the String, the method of slicing is used. Slicing in a String is done by using a Slicing operator (colon). "
+      ]
+    },
+    {
+      "tag":"Deleting/Updating from a String",
+      "patterns":[
+        "Deleting/Updating from a String",
+        "How to delete a string?",
+        "How to update a string?"
+      ],
+      "responses":[
+        "In Python, the Updation or deletion of characters from a String is not allowed. This will cause an error because item assignment or item deletion from a String is not supported. Although deletion of the entire String is possible with the use of a built-in del keyword. This is because Strings are immutable, hence elements of a String cannot be changed once it has been assigned. Only new strings can be reassigned to the same name."
+      ]
+    }
+
+  ]
+  }
